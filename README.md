@@ -1,22 +1,21 @@
-# node-module-concat
-Node.js module concatenation library
-
-`NOTE: This documentation has not been updated since forking`
+# browser-module-concat
+Node.js module concatenation library - for the browser
 
 ## What is it?
 This library exposes a single function that concatenates Node.js modules
 within a project.  This can be used to obfuscate an entire project into a
 single file.  It can also be used to write client-side JavaScript code where
-each file is written just like a Node.js module.
+each file is written just like a Node.js module. This output file should
+execute correctly within a browser.
 
 ## Install
 
-`npm install node-module-concat`
+`npm install browser-module-concat`
 
 ## Usage
 
 ```javascript
-var modConcat = require("node-module-concat");
+var modConcat = require("browser-module-concat");
 var outputFile = "./project/concatenated.js";
 modConcat("./project/index.js", outputFile, function(err, files) {
 	if(err) throw err;
@@ -26,7 +25,7 @@ modConcat("./project/index.js", outputFile, function(err, files) {
 
 ## API
 
-`var modConcat = require("node-module-concat");`
+`var modConcat = require("browser-module-concat");`
 
 **`modConcat(entryModule, outputFile, [options,] cb)`**
 
@@ -48,5 +47,5 @@ modConcat("./project/index.js", outputFile, function(err, files) {
 ## Known limitations
 - Dynamic `require()` statements don't work
 	(i.e. `require("./" + variable)`)
-- `require.resolve` calls are not modified
-- `require.cache` statements are not modified
+- `__filename` and `__dirname` don't work, as they make no sense within a browser
+- Basic functionality only. Not an alternative to browserify
