@@ -1,6 +1,8 @@
 # node-module-concat
 Node.js module concatenation library
 
+`NOTE: This documentation has not been updated since forking`
+
 ## What is it?
 This library exposes a single function that concatenates Node.js modules
 within a project.  This can be used to obfuscate an entire project into a

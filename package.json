@@ -1,5 +1,5 @@
 {
-	"name": "node-module-concat",
+	"name": "browser-module-concat",
 	"version": "1.3.0",
 	"description": "Node.js module concatenation library",
 	"main": "index.js",
@@ -12,19 +12,19 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bminer/node-module-concat.git"
+		"url": "https://github.com/peabnuts123/browser-module-concat"
 	},
 	"keywords": [
-		"node",
+		"browser",
 		"module",
 		"concatenate",
 		"obfuscation",
 		"require"
 	],
-	"author": "Blake Miner <miner.blake@gmail.com>",
+	"contributors" : ["Blake Miner <miner.blake@gmail.com>", "Jeff Andrews <peabnuts123@gmail.com>"],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/bminer/node-module-concat/issues"
+		"url": "https://github.com/peabnuts123/browser-module-concat/issues"
 	},
-	"homepage": "https://github.com/bminer/node-module-concat"
+	"homepage": "https://github.com/peabnuts123/browser-module-concat"
 }
